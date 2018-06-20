@@ -1,0 +1,11 @@
+<h1>All Users</h1>
+
+<ul>
+  <% @users.each do |user| %>
+  <div class="user card">
+  <%= image_tag url_for(user.avatar), width: '75px' %>
+  <br />
+  <%= link_to "@#{user.username}", user_url(id: user.id) %>
+  </div>
+  <% end %>
+</ul>
