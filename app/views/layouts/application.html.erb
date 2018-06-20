@@ -20,13 +20,13 @@
       <%= link_to "Login", new_user_session_url %>
       <% end %>
     </nav>
-    <% if notice  %>
-      <p class="notice alert alert-success"><%= notice %></p>
-    <% end %>
-    <% if alert %>
-      <p class="alert alert alert-danger"><%= alert %></p>
-    <% end  %>
     <div class="container">
+      <% if notice  %>
+        <p class="notice alert alert-success"><%= notice %></p>
+      <% end %>
+      <% if alert %>
+        <p class="alert alert alert-danger"><%= alert %></p>
+      <% end %>
       <%= yield %>
     </div>
   </body>
